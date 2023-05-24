@@ -133,3 +133,47 @@ Stroke effects - Nucleo outline icons
   -o-transform: translateX(0.5px) translateY(0.5px);
   transform: translateX(0.5px) translateY(0.5px);
 }
+
+html{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.matrix-board {
+  display: grid;
+  grid-template-rows: 210px 210px;
+  grid-template-columns: 210px 210px;
+  justify-content: end; /* 요소를 오른쪽으로 정렬 */
+}
+.martix-container {
+  display: flex;
+  justify-content: right;
+  padding-right: 20px;
+}
+.matrix-box {
+  background-color:white;
+  border: 1px solid  hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0 0.15em 0.175em hsla(0, 0%, 0%, 0.1);
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:5px;
+  color: #0b9dc1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  transition: 500ms;
+  transition-timing-function: ease;
+}
+.matrix-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.3), 0 0 1px 0 rgba(0, 0, 0, 0.25);
+  transition: 500ms;
+  transition-timing-function: ease;
+}
+
+
+.martix-text {
+  display: flex;
+  justify-content: left;
+  padding-left: 50px;
+}
